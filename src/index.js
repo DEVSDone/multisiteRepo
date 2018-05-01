@@ -1,17 +1,15 @@
 import React from 'react';
-import { render } from 'react-dom';
-import Hello from './Hello';
-
-const styles = {
-  fontFamily: 'sans-serif',
-  textAlign: 'center',
+import ReactDOM from "react-dom";
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import RaisedButton from 'material-ui/RaisedButton';
+const style = {
+  margin: 12,
 };
-
 const App = () => (
-  <div style={styles}> 
-    <Hello name="CodeSandbox" />
-    <h2>Start editing to see some magic happen {'\u2728'}</h2>
-  </div>
+  <MuiThemeProvider>
+  <div>Hello</div>
+  <RaisedButton label="Primary" primary={true} style={style} />
+  </MuiThemeProvider>
 );
 
-render(<App />, document.getElementById('root'));
+ReactDOM.render(<App />, document.getElementById('root'));
