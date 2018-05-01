@@ -7,13 +7,9 @@ import "./styles.css";
 
 const App = () => (
   <MuiThemeProvider>
-    <div className="row">
-      <div className="col-xs"><SitePane /></div>
-      <div className="col-xs"><SitePane /></div>
-    </div>
-    <div className="row">
-      <div className="col-xs"><SitePane /></div>
-      <div className="col-xs"><SitePane /></div>
+    <div className="row center-xs parent">
+      <div className="col-xs parent border"><SitePane /></div>
+      <div className="col-xs parent border"><SitePane /></div>
     </div>
   </MuiThemeProvider>
 );
