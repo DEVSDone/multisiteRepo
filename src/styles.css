@@ -1,3 +1,22 @@
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #b1aaaa; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #888; 
+}
 #root{
   height: 100vh;
 }
@@ -9,4 +28,8 @@
     border: 1px solid lightgrey;
     margin: 10px;
     overflow: auto;
+}
+.pad10TopBot{
+  padding: 10px 0px;
+  background-color: lightgray;
 }

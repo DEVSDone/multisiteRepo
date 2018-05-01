@@ -10,6 +10,7 @@ class App extends React.Component {
   constructor() {
     super();
     this.state = { currentGrid: [] }; 
+    this.addrGridItem = this.addrGridItem.bind(this);
   }
   addrGridItem() {
     let { currentGrid } = this.state;
