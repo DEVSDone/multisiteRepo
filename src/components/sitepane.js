@@ -5,13 +5,17 @@ const style = {
   margin: 12,
 };
 
-class SitePane extends React.Component{
-  render (){
+class SitePane extends React.Component {
+  render() {
     return <div>
       <TextField
         hintText="Enter URL here"
       />
-      <RaisedButton label="Go" primary={true} style={style} /></div>
+      <RaisedButton label="Go"
+        primary={true}
+        style={style}
+      />
+    </div>
   }
 }
 
