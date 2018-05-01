@@ -16,7 +16,7 @@ class AdderToolbar extends React.Component {
   render() {
     return <div className="row end-xs">
       <div className="col-xs">
-        <FloatingActionButton secondary={true} mini={true} style={style}>
+        <FloatingActionButton secondary={true} mini={true} style={style} onClick={this.props.onAdd}>
           <ContentAdd />
         </FloatingActionButton>
       </div>

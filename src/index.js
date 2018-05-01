@@ -9,7 +9,7 @@ import "./styles.css";
 class App extends React.Component {
   constructor() {
     super();
-    this.state = { currentGrid: [] };
+    this.state = { currentGrid: [] }; 
   }
   addrGridItem() {
     let { currentGrid } = this.state;
@@ -19,7 +19,7 @@ class App extends React.Component {
   render() {
     return (
       <MuiThemeProvider>
-        <AdderToolbar />
+        <AdderToolbar onAdd = {this.addrGridItem}/>
         <div className="row center-xs parent">
           {this.state.currentGrid}
         </div>
